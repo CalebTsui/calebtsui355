@@ -1,22 +1,306 @@
+html {
+    margin: 0;
+    padding: 0; 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+/* fonts */
+
+/* Regular */
+@font-face {
+  font-family: 'Gabarito';
+  src: url('./fonts/Gabarito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Gabarito';
+  src: url('./fonts/Gabarito-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Gabarito';
+  src: url('./fonts/Gabarito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: 'Gabarito';
+  src: url('./fonts/Gabarito-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Gabarito';
+  src: url('./fonts/Gabarito-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Gabarito';
+  src: url('./fonts/Gabarito-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* spacing between icon and text */
+  text-decoration: none; /* removes underline */
+  color: #1E8541;
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.logo-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%; /* optional, makes it circular */
+}
+
+/* header */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 2rem;
-    padding-left: 2rem;
-
+    padding-right: 7rem;
+    padding-left: 7rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
     text-decoration: none;
-    
+
+    border-bottom: 3px solid #F2F2F2;
 }
+
+/* navigation */
 
 nav {
     display: flex;
-    gap: 16px;
+    gap: 2rem;
+    text-decoration: none;
+
+    /* nav box */
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    background-color: #F6F6F6;
+
 }
 
 nav a {
-    font-size: 16px;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400; 
+    font-size: 1.2rem;
+    color: #1E8541;
     text-decoration: none;
-    color: black;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px; 
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+
 }
+
+nav a:hover{
+    background-color: #1E8541;
+    color: white;
+
+}
+
+/* Active state */
+nav a.active {
+    background-color: #1E8541;
+    color: white;
+    font-weight: 600;
+
+}
+
+/* Focus state */
+nav a:focus,
+.highlight:focus {
+  outline: 2px solid #1E8541;
+  outline-offset: 3px;
+}
+
+#myHeader {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600; 
+    font-size: 1.5rem;
+    color: #1E8541;
+    text-decoration: none;
+
+}
+
+#myHeader a {
+  text-decoration: none;
+  color: #1E8541;
+}
+
+/* Home page */
+/* Intro section layout */
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    margin-top: 5rem;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    padding-bottom: 4rem;
+    align-items: start;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+/* Left column */
+.intro-left .greeting {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.intro-left .name {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0;
+}
+
+/* Right column */
+.intro-right h2 {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 0 0 1rem;
+}
+
+/* Green highlights */
+.highlight {
+    font-family: 'Gabarito', sans-serif;
+    color: #1E8541;
+    font-weight: 600;
+}
+
+/* Small note text */
+.note {    
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #ABABAB;
+}
+
+@media (max-width: 80rem) {
+  .intro {
+    grid-template-columns: 1fr; /* stack into one column */
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+/* About Page */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 5rem 7rem;
+    align-items: center;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+.about-left {
+    display: grid;
+    gap: 1rem;
+}
+
+.about-left img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.about-right h2 {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-right p {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 70rem) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-left {
+    justify-items: center;
+  }
+
+  .about-right h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+footer h3 {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1E8541;
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;    
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: #1E8541;
+}
+
+.footer-links a {
+    color: #1E8541;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 
