@@ -150,11 +150,6 @@ nav a:focus,
 
 }
 
-#myHeader a {
-  text-decoration: none;
-  color: #1E8541;
-}
-
 /* Home page */
 .intro {
     display: grid;

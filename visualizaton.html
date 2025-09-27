@@ -31,11 +31,6 @@
 
     </section>
 
-    <section class="visualPage">
-        <svg id="barChart" viewBox="0 0 500 400" 
-     style="max-width:100%; height:auto; border:1px solid #eee;">
-</svg>
-    </section>
 
     <section class="visualPage">
         <svg 
@@ -73,46 +68,5 @@
         </div>
     </footer>
 
-  <script>
-  // Example dataset
-  const data = [500, 350, 900, 750];
-  const labels = ["A", "B", "C", "D"];
-
-  const svg = document.getElementById("barChart");
-
-  const chartWidth = 500;
-  const chartHeight = 400;
-
-  const barWidth = 80;         // width of each bar
-  const barGap = 30;           // space between bars
-  const maxValue = Math.max(...data); // for scaling
-
-  // Loop through data to draw bars + labels
-  for (let i = 0; i < data.length; i++) {
-    const value = data[i];
-    const barHeight = (value / maxValue) * (chartHeight - 50); // scale to fit
-
-    const x = 50 + i * (barWidth + barGap); // X position
-    const y = chartHeight - barHeight;      // Y position
-
-    // Draw bar
-    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    rect.setAttribute("x", x);
-    rect.setAttribute("y", y);
-    rect.setAttribute("width", barWidth);
-    rect.setAttribute("height", barHeight);
-    rect.setAttribute("fill", ["#ff4d4d", "#ff3333", "#cc2222", "#1f294d"][i]);
-    svg.appendChild(rect);
-
-    // Add label
-    const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    text.textContent = labels[i];
-    text.setAttribute("x", x + barWidth / 2);
-    text.setAttribute("y", chartHeight - 10);
-    text.setAttribute("text-anchor", "middle");
-    text.setAttribute("font-size", "16");
-    text.setAttribute("font-weight", "bold");
-    svg.appendChild(text);
-  }
-</script>
+  <script src="script.js"></script>
 </html>
