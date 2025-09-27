@@ -21,41 +21,72 @@
             <a href="/visualizaton.html">Visualization</a>
         </nav>
     </header>
-
+    
     <section class="visualPage">
-        <div>
-            <svg>
-                <rect x="0" width="100" height="100" rx="15" />
-            </svg>
-        </div>
+        <svg id="frogScene" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
+        style="max-width: 100%; height: auto; display: block;" >
+            <!-- background -->
+            <rect x="0" y="0" width="600" height="350" rx="15" fill="#FFA07D"/>
 
+            <!-- left leg -->
+             <g transform="translate(295,0) scale(-1,1) translate(-295,-15)" fill="#1F5829">
+                <ellipse cx="345" cy="220" rx="40" ry="30" fill="#1F5829"/>
+                <rect x="320" y="245" width="15" height="50" rx="8" transform="rotate(-40, 315, 241)"/>
+                <rect x="330" y="255" width="15" height="50" rx="8" transform="rotate(-50, 315, 241)"/>
+                <rect x="340" y="265" width="15" height="50" rx="8" transform="rotate(-60, 315, 241)"/>
+             </g>
+
+            <!-- left arm -->
+             <g transform="translate(-60,-17)" fill="#2F703A">
+                <rect x="310" y="170" width="33" height="90" rx="20" transform="rotate(10, 300, 170)"/>
+                <rect x="315" y="240" width="15" height="50" rx="8" transform="rotate(80, 315, 240)"/>
+                <rect x="315" y="241" width="15" height="50" rx="8" transform="rotate(50, 315, 241)"/>
+                <rect x="317" y="241" width="15" height="50" rx="8" transform="rotate(25, 317, 241)"/>
+             </g>
+
+             <!-- right leg -->
+             <g fill="#348642">
+                <ellipse cx="345" cy="220" rx="40" ry="30" fill="#348642"/>
+                <rect x="320" y="245" width="15" height="50" rx="8" transform="rotate(-40, 315, 241)"/>
+                <rect x="330" y="255" width="15" height="50" rx="8" transform="rotate(-50, 315, 241)"/>
+                <rect x="340" y="265" width="15" height="50" rx="8" transform="rotate(-60, 315, 241)"/>
+             </g>
+
+            <!-- body -->
+             <g>
+                <circle cx="300" cy="180" r="70" fill="#3F984D"/>
+                <rect x="205" y="110" width="140" height="70" rx="40" fill="#3F984D"/>
+             </g>
+
+             <!-- eyes -->
+             <g>
+                <circle cx="305" cy="115" r="20" fill="#3F984D"/>
+                <circle cx="250" cy="110" r="20" fill="#3F984D"/>
+                <!-- eyes white? -->
+                <circle cx="305" cy="115" r="15" fill="#EFC667"/>
+                <circle cx="250" cy="110" r="15" fill="#EFC667"/>
+                <!-- pupils -->
+                <rect x="295" y="107" width="20" height="17" rx="100" fill="black"/>
+                <rect x="240" y="102" width="20" height="17" rx="100" fill="black"/>
+             </g>
+             
+             <!-- nose -->
+             <g>
+                <circle cx="275" cy="135" r="2" fill="#A3E5AD"/>
+                <circle cx="265" cy="135" r="2" fill="#A3E5AD"/>
+             </g>
+
+             <!-- right arm -->
+             <g>
+                <rect x="310" y="170" width="33" height="90" rx="20" fill="#3FB453" transform="rotate(10, 300, 170)"/>
+                <rect x="315" y="240" width="15" height="50" rx="8" fill="#3FB453" transform="rotate(80, 315, 240)"/>
+                <rect x="315" y="241" width="15" height="50" rx="8" fill="#3FB453" transform="rotate(50, 315, 241)"/>
+                <rect x="317" y="241" width="15" height="50" rx="8" fill="#3FB453" transform="rotate(25, 317, 241)"/>
+             </g>
+
+        </svg>
     </section>
 
-
-    <section class="visualPage">
-        <svg 
-  id="frogScene"
-  viewBox="0 0 600 400"        <!-- define your drawing space -->
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="xMidYMid meet"  <!-- keeps proportions centered -->
-  style="max-width: 100%; height: auto; display: block;"
->
-  <!-- 👇 put your shapes here (no width/height in px, just numbers) -->
-  <!-- Example shapes (replace with your frog parts) -->
-  <rect x="0" y="0" width="600" height="400" fill="#f9a88d"/>
-  <circle cx="300" cy="200" r="80" fill="green"/>
-  <circle cx="260" cy="160" r="20" fill="white"/>
-  <circle cx="340" cy="160" r="20" fill="white"/>
-
-</svg>
-    </section>
-
-    
-
-
-
-    
-    
   </body>
 
   <footer>
