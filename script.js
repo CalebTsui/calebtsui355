@@ -1,5 +1,7 @@
 console.log("script.js loaded");
 
+/* flies stuff */ 
+
 const flies = document.querySelectorAll(".fly");
 
 flies.forEach((fly, index) => {
@@ -23,3 +25,23 @@ flies.forEach((fly, index) => {
 
   buzz();
 });
+
+/* frog */ 
+
+const frog = document.getElementById("frog");
+const frogSound = document.getElementById("frogSound");
+
+frog.style.cursor = "pointer";
+
+frog.addEventListener("click", () => {
+
+  frogSound.currentTime = 0;
+  frogSound.play();
+
+  frog.classList.add("bouncing");
+
+  frog.addEventListener("animationend", () => {
+    frog.classList.remove("bouncing");
+  }, { once: true });
+});
+
