@@ -200,6 +200,7 @@ nav a:focus,
 
 /* Small note text */
 .note {    
+    display: none;
     font-family: 'Gabarito', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
@@ -275,116 +276,103 @@ footer h3 {
 
 /* Selected Work */
 .section-title {
-  font-family: 'Gabarito', sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin: 0 7rem;
-  padding-top: 2rem;
-  color: #222;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
 }
+
 
 /* Container */
 .selected-work {
-  padding: 2rem 7rem 4rem;
-  border-bottom: 3px solid #F2F2F2;
+    padding: 2rem 7rem ;
+    padding-bottom: 7rem;
+    border-bottom: 3px solid #F2F2F2;
 }
 
 /* Grid */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.25rem;
-  margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.25rem;
+    margin-top: 1.5rem;
 }
 
 /* Card */
 .card {
-  background: white;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
-  overflow: visible; /* image will be clipped by .thumb - not card */
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  min-height: 260px;
+    background: white;
+    border-radius: 1.3rem;
+    box-shadow: 0 0px 18px rgba(0,0,0,0.1);
+    overflow: visible; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-/* Thumb area: preserves card size and rounds corners */
-.thumb-link { display: block; border-radius: 12px; overflow: hidden; }
+/* Thumb area */
+.thumb-link { 
+    display: block; 
+    border-radius: 12px; 
+    overflow: hidden; 
+}
+
 .thumb {
-  width: 100%;
-  aspect-ratio: 4/3; /* adjust as desired */
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  background: #f6f2ec;
-  box-shadow: 0 2px 0 rgba(0,0,0,0.03) inset;
+    width: 100%;
+    aspect-ratio: 4/3; 
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: #f6f2ec;
+
 }
 
-/* The img enlarges, but is clipped by .thumb */
 .thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform-origin: center;
-  transition: transform 400ms cubic-bezier(.2,.9,.3,1);
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    transition: transform 400ms cubic-bezier(.2,.9,.3,1);
+    display: block;
 }
 
-/* zoom on hover (only the image grows) */
-.thumb-link:hover .thumb img,
-.thumb-link:focus .thumb img {
-  transform: scale(1.12);
-}
 
-/* keep hover accessible */
-.thumb-link:focus { outline: 2px solid rgba(30,133,65,0.12); outline-offset: 4px; }
+.thumb-link:hover .thumb img, .thumb-link:focus .thumb img {
+    transform: scale(1.12);
+}
 
 /* card body */
 .card-body .tags {
-  display:flex;
-  gap: 0.5rem;
-  margin-bottom: 0.25rem;
+    display:flex;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 .card-body .tags span {
-  background: #EAF6EE;
-  color: #1E8541;
-  font-weight:600;
-  font-size:0.8rem;
-  padding:0.25rem 0.5rem;
-  border-radius: 999px;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #1E8541;
+    color: white;
+    padding:0.5rem 1rem;
+    border-radius: 999px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* headings */
 .card-body h3 {
-  margin: 0.25rem 0;
-  font-family: 'Gabarito', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
 }
 .card-body p {
-  margin: 0;
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.4;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: #ABABAB;
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
-
-/* Responsive */
-@media (max-width: 70rem) {
-  .cards { grid-template-columns: 1fr; }
-  .selected-work { padding-left: 2rem; padding-right: 2rem; }
-  .section-title { margin-left: 2rem; margin-right: 2rem; }
-}
-
-
-
-
-
-
-
-
-
 
 /* visualization */
 .visualPage {
@@ -443,6 +431,10 @@ footer h3 {
 
     .about-right h2 {
         font-size: 1.6rem;
+    }
+
+    .cards { 
+        grid-template-columns: 1fr; 
     }
 
 }
