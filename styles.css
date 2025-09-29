@@ -406,6 +406,34 @@ footer h3 {
 
 }
 
+.barText {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #1E8541;
+
+}
+
+.tooltip {
+    position: absolute;
+    
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 1.5rem;
+
+    padding: 0.5rem 1.5rem;
+    background: #F2F2F2;
+    color: #1E8541;
+    border: 3px solid #1E8541;
+    border-radius: 999px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+
 /* responsive */
 
 @media (max-width: 70rem) {
