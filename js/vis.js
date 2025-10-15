@@ -51,10 +51,11 @@ fetchData().then(async (data) => {
         .markLine({point: true})
         .data(data)
         .encode(
-            vl.x().fieldO('Year').title('Year of Release'),
-            vl.y().sum('Global_Sales').title('Total Global Sales'),
-            vl.color().fieldN('Platform').scale({scheme: "category20"}),
-            vl.tooltip(['Year', 'Platform', 'sum(Global_Sales)'])
+            vl.x().fieldO("Year").title("Year of Release"),
+            vl.y().fieldQ("Global_Sales").aggregate("sum").title("Total Global Sales (in millions)"),
+            vl.color().fieldN("Platform").scale({scheme: "category20"}),
+            vl.tooltip(["Year", "Platform", "sum(Global_Sales)"
+            ])
         )
         .width(700)
         .height(400)
@@ -66,9 +67,10 @@ fetchData().then(async (data) => {
         .markArea({point: true})
         .data(data)
         .encode(
-            vl.x().fieldO('Year').title('Year of Release'),
-            vl.y().sum('Global_Sales').title('Total Global Sales (in millions)'),
-            vl.color().fieldN('Genre').scale({scheme: "category20"})
+            vl.x().fieldO("Year").title("Year of Release"),
+            vl.y().fieldQ("Global_Sales").aggregate("sum").title("Total Global Sales (in millions)"),
+            vl.color().fieldN("Genre").scale({scheme: "category20"}),
+            vl.tooltip(["Year", "Genre", "sum(Global_Sales)"])
         ).width(700)
         .height(400)
         .title("Sales Over Time by Genre")
