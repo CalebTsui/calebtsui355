@@ -386,6 +386,52 @@ footer h3 {
     line-height: 1.4;
 }
 
+/* Sandbox */
+.constructonBox {
+    text-align: center;
+    max-width: 80%;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+
+}
+
+/* Container */
+.constructon-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2rem 7rem ;
+    padding-bottom: 7rem;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+.constructon-work a {
+  text-decoration: underline;
+  text-decoration-color: #1E8541;  /* custom color */
+  text-decoration-thickness: 0.2rem;  /* thickness */
+  text-underline-offset: 0.7rem;      /* how far below the text */
+}
+
+
+/* observable visualizations */
+#view, #view2, #view3, #view4, #view5 {
+    margin-top: 4rem;
+    background: white;
+    border-radius: 1.3rem;
+    box-shadow: 0 0px 18px rgba(0,0,0,0.1);
+    overflow: visible; 
+    padding: 2rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* visualization */
 .visualPage {
     padding-right: 7rem;
@@ -502,15 +548,32 @@ footer h3 {
         font-size: 1.5rem;
     }
 
+    .constructonBox {
+        font-size: 2rem;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .constructon-work {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        padding: 4rem ;
+    }
+
     .footer-links {
         display: flex;
         flex-direction: column;
         padding-right: 2rem;
         padding-left: 2rem;
-        justify-content: left;
+        justify-content: flex-start;
     }
 
 }
+
+
 
 
 

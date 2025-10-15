@@ -162,7 +162,7 @@ fetchData().then(async (data) => {
     render("#view2", vlSpec2);
     render("#view3", vlSpec3);
     render("#view4", vconcatSpec4);
-    render("#view4", vlSpec5);
+    render("#view5", vlSpec5);
 
 });
 
