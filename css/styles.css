@@ -72,16 +72,18 @@ html, body {
 /* header */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 7rem;
-    padding-left: 7rem;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-    text-decoration: none;
+  position: sticky;
+  top: 0; 
+  z-index: 1000;
 
-    border-bottom: 3px solid #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 7rem; 
+  text-decoration: none;
+  background-color: white;
+  border-bottom: 3px solid #F2F2F2;
 }
 
 /* navigation */
@@ -432,6 +434,21 @@ footer h3 {
     align-items: center;
 }
 
+/* doodle */
+.doodle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.doodle-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /* visualization */
 .visualPage {
     padding-right: 7rem;
@@ -469,6 +486,94 @@ footer h3 {
     transition: opacity 0.2s;
 }
 
+/* Project Page */ 
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 5rem;
+}
+
+.heroImage {
+    background-color: #f3eedd; 
+    width: 100%;
+    height: 64vh;
+    border-radius: 2rem;
+    margin-bottom: 0rem;
+}
+
+.goodread-hero {
+    display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    align-items: flex-start;
+    max-width: 100%;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+/* Left column */
+.goodread-hero-text {
+    flex: 2; 
+}
+
+/* Left column font */
+.goodread-hero-text h2 {
+    font-family: 'Gabarito', sans-serif;
+    color: #1E8541;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.goodread-hero-text h3 {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 85%;
+    margin-top: 0;
+}
+
+.goodread-hero-text .disclaimer {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+/* Right column */
+.goodread-hero-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem; /* top, right, bottom, left */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 280px;
+    gap: 1rem; 
+}
+
+.goodread-hero-info p {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0; 
+}
+
+.goodread-hero-info strong {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
 
 /* responsive */
 
