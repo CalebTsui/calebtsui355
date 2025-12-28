@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Caleb Tsui - Portfolio</title>
 
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="images/icon.png">
 
   </head>
+
   <body>
+
+    <!-- Header -->
     <header>
 
         <h1 id="myHeader">
@@ -25,43 +24,61 @@
             </a>
         </h1>
 
+        <!-- Nav bar -->
         <nav>
-            <a href="about.html">About</a>
+            <a href="index.html#myWork">Works</a>
             <a href="sandbox.html">Sandbox</a>
+            <a href="sandbox.html">About</a>
         </nav>
+
+        <div>
+            <a class="resume" href="sandbox.html">View Resumé</a>
+        </div>
 
     </header>
 
+    <!-- Intro section -->
     <section class="intro">
-        <div class="intro-left">
-            <h2 class="greeting">
-                Hello hello,
-            </h2>
-            <h2 class="name">
-                I’m <span class="highlight">Caleb Tsui</span> <span style="color: #ABABAB;">(ch-u-oi) :D</span>
-            </h2>
-        </div>
         
-        <div class="intro-right">
+        <div class="intro-left">
+            <h2> 
+                Helloo, I’m <span class="strike">a chef </span><span class="highlight">Caleb</span>!
+            </h2>
             <h2>
-                A Designer who blends curiosity, strategic thinking, and creativity 
-                to create <span class="highlight">meaningful</span> digital experiences. 
-                My mission? Fewer <span class="highlight">“ughh”</span> moments, 
-                more <span class="highlight">“ohh nicee!”</span> ones.
+                A UX/UI & Product Designer who mixes <span class="highlight">strategic thinking and curiosity</span>, with a touch of creativity to bake goal-aligned experiences. My mission? Less <span class="highlight">“ughhh,”</span> more <span class="highlight">“oh, nice!”</span>
             </h2>
             <p class="note">
-                Previously Design Intern @ Fraser Health
+                Previously Design Specialist Intern @ Fraser Health Authority & currently learning how to design @ SFU SIAT
             </p>
         </div>
+
+        
+        <!-- Intro Image -->
+        <div class="intro-right">
+            <img class="introImg" src="images/IntroImg.png" alt="A polaroid of me in Whistler">
+        </div>
+
     </section>
 
-    <section class="selected-work">
 
-        <h2 class="section-title" style="margin-bottom: 3rem;">Selected Work</h2>
-
+    <!-- Selected works -->
+    <section class="selected-work" id="myWork">
         <div class="cards">
-
             <!-- Card 1 -->
+            <article class="card">
+                <a href="observable.html" class="thumb-link" aria-label="Goodreads project">
+                    <div class="thumb">
+                        <img src="images/VA_Img.png" alt="Cover Image for Vancouver Aquarium Project">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <h3>Vancouver Aquarium</h3>
+                    <p>Designing experiences that elevate the guest journey and reinforce Vancouver Aquarium’s educational mission.</p>
+                    <div class="tags"><span>B2C UX</span><span>Product Design</span><span>UX Research</span></div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
             <article class="card">
                 <a href="observable.html" class="thumb-link" aria-label="Goodreads project">
                     <div class="thumb">
@@ -69,68 +86,84 @@
                     </div>
                 </a>
                 <div class="card-body">
-                    <div class="tags"><span>Graphs</span><span>Observable</span><span>Vega-Lite</span></div>
-                    <h3>Observable Visualizations</h3>
-                    <p>Assignment Three deliverables - Create 4 visualizations using Observable and Vega-Lite.</p>
+                    <h3>Goodreads Community Interface Redesign</h3>
+                    <p>Refining Goodreads’ community feature through user research to better support reader engagement.</p>
+                    <div class="tags"><span>UX/UI Design</span><span>User Research</span><span>Prototype</span></div>
                 </div>
             </article>
 
-            <!-- Card 2 -->
-            <article class="card">
-                <a href="visualizaton.html" class="thumb-link" aria-label="Goodreads project">
-                    <div class="thumb">
-                        <img src="images/coverone.png" alt="Visualizations thumbnail">
-                    </div>
-                </a>
-                <div class="card-body">
-                    <div class="tags"><span>Visualization</span><span>HTML/CSS/JS</span></div>
-                    <h3>Personal Portfolio & Visualizations</h3>
-                    <p>Assignment two deliverables - Using HTML, CSS, and JS to create two visualizations.</p>
-                </div>
-            </article>
-
-            <!-- please ignore -->
             <!-- Card 3 -->
-             <!-- <article class="card">
-                <a href="#" class="thumb-link" aria-label="Strange sounds">
+            <article class="card">
+                <a href="observable.html" class="thumb-link" aria-label="Goodreads project">
                     <div class="thumb">
-                        <img src="images/testing.png" alt="Strange sounds microsite">
+                        <img src="images/coverthree.png" alt="Visualizations thumbnail">
                     </div>
                 </a>
                 <div class="card-body">
-                    <div class="tags"><span>UX/UI Design</span><span>UX Research</span></div>
-                    <h3>Strange Sounds From Beyond Microsite</h3>
-                    <p>Conducting an intensive design + research journey to develop a speculative microsite.</p>
+                    <h3>Fixing Colourbind Gaps in Online Fashion</h3>
+                    <p>Improving the fashion e-commerce experience for the colourblind community to make more confident choices.</p>
+                    <div class="tags"><span>UX/UI Design</span><span>User Research</span><span>Prototype</span></div>
                 </div>
             </article>
 
-             Card 4 
-             <article class="card">
-                <a href="#" class="thumb-link" aria-label="Design jam">
+            <!-- Card 4 -->
+            <article class="card">
+                <a href="observable.html" class="thumb-link" aria-label="Goodreads project">
                     <div class="thumb">
-                        <img src="images/testing.png" alt="Eunoia Design Jam">
+                        <img src="images/coverthree.png" alt="Visualizations thumbnail">
                     </div>
                 </a>
                 <div class="card-body">
-                    <div class="tags"><span>UX/UI Design</span><span>UX Research</span></div>
-                    <h3>Eunoia Design Jam: Caltec Solution Rebrand</h3>
-                    <p>Strategize and develop a catered solution for the client’s needs and wants.</p>
+                    <h3>Strange Sounds from Beyond</h3>
+                    <p>Developing a speculative microsite that better informs users about the event.</p>
+                    <div class="tags"><span>Visual Design</span><span>Branding</span><span>Content Design</span></div>
                 </div>
-            </article> 
-            -->
+            </article>
         </div>
     </section> 
-  </body>
 
-  <footer>
-        <h3>Thank you for stalking me!</h3>
-        <div class="footer-links">
-            <p>Designed + Coded by me :)</p>
-            <p>Caleb Tsui 2025</p>
-            <a href="mailto:calebtsui0314@gmail.com">Send an email!</a>
-            <a href="https://www.linkedin.com/in/caleb-tsui/" target="_blank">Connect with me!</a>
+</body>
+  
+  <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-inner">
+        <!-- Left group -->
+        <div class="footer-left-group">
+            <div class="footer-left">
+                <h4>Thank you for stalking me!</h4>
+                <p>Currently, you can find me designing in Vancouver.</p>
+            </div>
+            <p class="footer-credit">Designed & coded by me :D</p>
         </div>
-    </footer>
 
-  <script src="script.js"></script>
+        <!-- Right group -->
+        <div class="footer-right-group">
+            <!-- Middle -->
+            <div class="footer-middle">
+                <h5>Let’s chat!</h5>
+                <ul>
+                    <li>Send me an <a href="mailto:you@email.com">email</a></li>
+                    <li>Connect me on <a href="#">LinkedIn</a></li>
+                    <li>Check out my <a href="#">Resume</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right -->
+            <div class="footer-right">
+                <h5>Home</h5>
+                <ul>
+                    <li><a href="index.html#myWork">Works</a></li>
+                    <li><a href="#">Sandbox</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © Caleb Tsui 2025
+    </div>
+</footer>
+
+
 </html>
