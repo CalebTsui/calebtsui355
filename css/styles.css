@@ -63,11 +63,40 @@ html, body {
     font-size: 1.3rem;
 }
 
-.logo-icon {
-    width: 1.4rem;
-    height: 1.4rem;
-    border-radius: 50%; 
+/* Logo wrapper */
+.logo-img {
+    position: relative;
+    width: 1.8rem; 
+    height: 1.8rem;
 }
+
+/* Default icon */
+.logo-icon.default {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Hover icon */
+.logo-icon.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;
+}
+
+.logo:hover .logo-icon.default {
+    display: none;
+}
+
+.logo:hover .logo-icon.hover {
+    display: block;
+}
+
 
 /* Header */
 header {
