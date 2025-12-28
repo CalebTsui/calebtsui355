@@ -1,4 +1,6 @@
+/* ------- */
 /* Font */
+/* ------- */
 @font-face {
     font-family: 'Saans';
     src: url('../fonts/Saans-TRIAL-Light.otf') format('opentype');
@@ -41,7 +43,9 @@
     font-style: normal;
 }
 
-
+/* ------- */
+/* Body + HTML */
+/* ------- */
 html, body {
     margin: 0;
     padding: 0; 
@@ -50,7 +54,9 @@ html, body {
     font-family: 'Saans', sans-serif;
 }
 
+/* ------- */
 /* Logo */
+/* ------- */
 .logo {
     display: flex;
     align-items: center;
@@ -98,7 +104,9 @@ html, body {
 }
 
 
+/* ------- */
 /* Header */
+/* ------- */
 header {
   display: flex;
   align-items: center;
@@ -110,7 +118,9 @@ header {
 
 }
 
-/* navigation */
+/* ------- */
+/* Nav Bar */
+/* ------- */
 
 nav {
     display: flex;
@@ -181,7 +191,9 @@ nav a:focus,
 }
 
 
-/* Home page */
+/* ------- */
+/* Home Page */
+/* ------- */
 /* Intro section */
 
 .intro {
@@ -213,13 +225,6 @@ nav a:focus,
     margin: 0 0 1rem;
 }
 
-/* Strikethrough */
-.strike {
-    text-decoration: line-through;
-    text-decoration-color: #363636; 
-    text-decoration-thickness: 0.1rem;  
-}
-
 /* Green highlights */
 .highlight {
     font-family: 'Saans', sans-serif;
@@ -240,7 +245,10 @@ nav a:focus,
 }
 
 
+/* ------- */
 /* Selected Work */
+/* ------- */
+
 /* Container */
 .selected-work {
     padding: 3.5rem 10rem; 
@@ -332,6 +340,306 @@ nav a:focus,
     line-height: 1.4;
 }
 
+/* ------- */
+/* Sandbox */
+/* ------- */
+.sandbox-intro {
+    padding: 4rem 12rem; 
+}
+
+.sandbox-intro h3 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 1.6rem;
+    color: #363636;
+
+}
+
+.sandbox-intro h2 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #363636;
+    line-height: 1.3;
+    width: 70%;
+
+}
+
+.sandbox-intro .highlight {
+    font-family: 'Saans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #1E8541;
+
+}
+
+.sandbox-work {
+    padding: 0rem 10rem; 
+    padding-bottom: 7rem;
+}
+
+.doodle-work {
+    padding: 0rem 12rem; 
+    padding-bottom: 7rem;
+}
+
+.doodle-work h2 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #363636;
+
+}
+
+/* doodle */
+.doodle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.doodle-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+/* ------- */
+/* Vancouver Aquarium */
+/* ------- */
+.case-layout {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 5rem;
+    padding: 4rem 6rem;
+}
+
+.case-sidebar {
+
+  position: sticky;
+  top: 4rem;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.case-sidebar nav {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.case-sidebar a {
+    
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    
+}
+
+.case-sidebar nav a:hover {
+    background: none;
+    color: #1E8541;
+}
+
+.back-link {
+    font-family: 'Saans', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #363636;
+    text-decoration: none;
+}
+
+
+.case-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.case-nav a {
+    font-family: 'Saans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #363636;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.case-nav a:hover {
+    background: none;
+    color: #1E8541;
+}
+
+.case-content {
+    max-width: 70vw;
+    margin-inline: auto;
+}
+
+.case-hero {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+.case-hero h1 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin: 1.2rem 0rem;
+}
+
+.hero-desc {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: #363636;
+    margin: 0rem;
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 0rem;
+}
+
+.meta-grid h4 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #363636;
+    margin-bottom: 0.5rem;
+}
+
+.meta-grid p {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin:0;
+}
+
+.case-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.case-gallery img {
+    width: 100%;
+    height: 20rem;       
+    border-radius: 1.2rem;
+    object-fit: cover;
+    display: block;    
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+}
+
+.div2 {
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.background {
+    margin-bottom: 5rem ;
+}
+
+.background h1 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.background p {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin-top:1rem;
+}
+
+.background img {
+    width: 100%;
+    height: auto;       
+    border-radius: 1.2rem;
+    display: block;    
+}
+
+/* VA - Content */
+.background .tags {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 0.25rem;
+}
+.background .tags span {
+    font-family: 'Saans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #1E8541;
+    color: #FFFFFF;
+    padding:0.5rem 1rem;
+    border-radius: 999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* About Page */
@@ -368,6 +676,7 @@ nav a:focus,
     line-height: 1.6;
     margin-bottom: 1rem;
 }
+
 
 
 
@@ -484,13 +793,6 @@ nav a:focus,
 
 
 
-
-
-
-
-
-
-
 /* Sandbox */
 .constructonBox {
     text-align: center;
@@ -518,17 +820,16 @@ nav a:focus,
   text-underline-offset: 0.7rem;      /* how far below the text */
 }
 
-/* doodle */
-.doodle-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  justify-items: center;
+/* 
+
+.introImg {
+    width: 80%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-.doodle-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 12px;
+.introImg:hover {
+    transform: rotate(5deg);
 }
+
+*/

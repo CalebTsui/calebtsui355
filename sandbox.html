@@ -16,42 +16,43 @@
 
   </head>
   <body>
+    <!-- Header -->
     <header>
 
         <h1 id="myHeader">
             <a href="index.html" class="logo">
-                <img src="images/icon.png" alt="Logo" class="logo-icon">
+                <span class="logo-img">
+                    <img src="images/icon.png" alt="Logo" class="logo-icon default">
+                    <img src="images/icon2.png" alt="Logo Hover" class="logo-icon hover">
+                </span>
                 Caleb Tsui
             </a>
         </h1>
 
+        <!-- Nav bar -->
         <nav>
-            <a href="about.html">About</a>
+            <a href="index.html#myWork">Works</a>
             <a href="sandbox.html">Sandbox</a>
+            <a href="about.html">About</a>
         </nav>
+
+        <div>
+            <a class="resume" href="sandbox.html">View Resumé</a>
+        </div>
 
     </header>
 
-    <section class="intro">
-        <div class="intro-left">
-            <h2 class="greeting">
-                Oh hi again, still here?
-            </h2>
-            <h2 class="name">
-                Here are other <span class="highlight">creative works</span>!
-            </h2>
+    <!-- Intro Section -->
+    <section class="sandbox-intro">
+        <div>
+            <h3>Still here? Here are other <span class="highlight">side quests</span>!</h3>
+            <h2>When I’m not busy fixing “ughhh” moments, I also like to doodle and embark on some very cool side quests.</h2>    
         </div>
-        
-        <div class="intro-right">
-            <h2>
-                When I’m not busy fixing <span class="highlight">“ughhh” </span>moments, 
-                I also like to doodle cute things and embark on some cool side quests :D
-            </h2>
-        </div>
+
     </section>
 
-    <section class="selected-work">
-        <h2 class="section-title" style="margin-bottom: 3rem;">My Side Quests</h2>
+    <!-- Side Projects -->
+    <section class="sandbox-work">
         <div class="cards">
             <!-- Card 1 -->
             <article class="card">
@@ -61,23 +62,9 @@
                     </div>
                 </a>
                 <div class="card-body">
-                    <div class="tags"><span>Project Management</span><span>Brand Design</span><span>Creative Strategy</span></div>
                     <h3>CaseIT 2025 - Directior of Design 🚧</h3>
                     <p>Spearheaded the CaseIT 2025’s branding and oversaw the design and of all marketing collateral.</p>
-                </div>
-            </article>
-
-            <!-- Card 4 -->
-            <article class="card">
-                <a href="" class="thumb-link" aria-label="Goodreads project">
-                    <div class="thumb">
-                        <img src="images/enactuscover.png" alt="Visualizations thumbnail">
-                    </div>
-                </a>
-                <div class="card-body">
-                    <div class="tags"><span>UI Design</span><span>Prototype</span><span>Design System</span></div>
-                    <h3>SFU Enactus - UI Designer 🚧</h3>
-                    <p>Designed and prototyped wireframes for the new 2024-2025 Enactus website and the Unify website + mobile app from 0 to 1.</p>
+                    <div class="tags"><span>Project Management</span><span>Brand Design</span><span>Creative Strategy</span></div>
                 </div>
             </article>
 
@@ -85,13 +72,13 @@
             <article class="card">
                 <a href="" class="thumb-link" aria-label="Goodreads project">
                     <div class="thumb">
-                        <img src="images/iatsucover.png" alt="Visualizations thumbnail">
+                        <img src="images/enactuscover.png" alt="Visualizations thumbnail">
                     </div>
                 </a>
                 <div class="card-body">
-                    <div class="tags"><span>Visual Design</span></div>
-                    <h3>IATSU 2024/2025 - Directior of Design 🚧</h3>
-                    <p>Elected by the SIAT student body to design digital and physical materials for 2024-2025 IATSU.</p>
+                    <h3>SFU Enactus - UI Designer 🚧</h3>
+                    <p>Designed and prototyped wireframes for the 24-25 Enactus website and the Unify website + mobile app from 0 to 1.</p>
+                    <div class="tags"><span>UI Design</span><span>Prototype</span><span>Design System</span></div>
                 </div>
             </article>
 
@@ -99,13 +86,27 @@
             <article class="card">
                 <a href="" class="thumb-link" aria-label="Goodreads project">
                     <div class="thumb">
+                        <img src="images/iatsucover.png" alt="Visualizations thumbnail">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <h3>IATSU 2024/2025 - Directior of Design 🚧</h3>
+                    <p>Elected by the SIAT student body to design digital and physical materials for 2024-2025 IATSU.</p>
+                    <div class="tags"><span>Visual Design</span><span>Brand Design</span></div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+                <a href="" class="thumb-link" aria-label="Goodreads project">
+                    <div class="thumb">
                         <img src="images/pivotcover.png" alt="Visualizations thumbnail">
                     </div>
                 </a>
                 <div class="card-body">
-                    <div class="tags"><span>Creative Strategy</span><span>Marketing Design</span><span>Motion Design</span></div>
                     <h3>PIVOT 2024 - Marketing Design Associate 🚧</h3>
                     <p>Creating an array of printed and digital materials based on the design guideline.</p>
+                    <div class="tags"><span>Creative Strategy</span><span>Marketing Design</span><span>Motion Design</span></div>
                 </div>
             </article>
 
@@ -113,8 +114,9 @@
 
     </section>
 
-    <section class="selected-work">
-        <h2 class="section-title" style="margin-bottom: 3rem;">My Creative Doodles</h2>
+    <!-- Doodle Section -->
+    <section class="doodle-work">
+        <h2>I doodle sometimes too...</h2>
         <div class="doodle-grid">
             <img src="images/doodle11.png" alt="Creative doodle 1">
             <img src="images/doodle9.png" alt="Creative doodle 2">
@@ -136,15 +138,46 @@
 
   </body>
 
-  <footer>
-        <h3>Thank you for stalking me!</h3>
-        <div class="footer-links">
-            <p>Designed + Coded by me :)</p>
-            <p>Caleb Tsui 2025</p>
-            <a href="mailto:calebtsui0314@gmail.com">Send an email!</a>
-            <a href="https://www.linkedin.com/in/caleb-tsui/" target="_blank">Connect with me!</a>
+  <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-inner">
+        <!-- Left group -->
+        <div class="footer-left-group">
+            <div class="footer-left">
+                <h4>Thank you for stalking me!</h4>
+                <p>Currently, you can find me designing in PST zone.</p>
+            </div>
+            <p class="footer-credit">Designed & coded from scratch, by me.</p>
         </div>
-    </footer>
+
+        <!-- Right group -->
+        <div class="footer-right-group">
+            <!-- Middle -->
+            <div class="footer-middle">
+                <h5>Let’s chat!</h5>
+                <ul>
+                    <li>Send me an <a href="mailto:you@email.com">Email</a></li>
+                    <li>Connect me on <a href="#">LinkedIn</a></li>
+                    <li>Check out my <a href="#">Resumé</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right -->
+            <div class="footer-right">
+                <h5>Home</h5>
+                <ul>
+                    <li><a href="index.html#myWork">Works</a></li>
+                    <li><a href="#">Sandbox</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © Caleb Tsui 2025
+    </div>
+</footer>
 
   <script src="js/script.js"></script>
 </html>
