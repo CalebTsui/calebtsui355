@@ -446,6 +446,23 @@ nav a:focus,
     
 }
 
+.case-layout p {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.case-layout h4 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #363636;
+    margin-bottom: 1rem;
+}
+
 .case-sidebar nav a:hover {
     background: none;
     color: #1E8541;
@@ -481,7 +498,7 @@ nav a:focus,
 }
 
 .case-content {
-    max-width: 70vw;
+    max-width: 60vw;
     margin-inline: auto;
 }
 
@@ -516,17 +533,9 @@ nav a:focus,
 
 .meta-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr;
     gap: 3rem;
     margin: 0rem;
-}
-
-.meta-grid h4 {
-    font-family: 'Saans', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #363636;
-    margin-bottom: 0.5rem;
 }
 
 .meta-grid p {
@@ -548,7 +557,7 @@ nav a:focus,
 
 .case-gallery img {
     width: 100%;
-    height: 20rem;       
+    height: 30rem;       
     border-radius: 1.2rem;
     object-fit: cover;
     display: block;    
@@ -574,7 +583,7 @@ nav a:focus,
 }
 
 .background {
-    margin-bottom: 5rem ;
+    margin-bottom: 8rem ;
 }
 
 .background h1 {
@@ -587,6 +596,28 @@ nav a:focus,
     margin-bottom: 1rem;
 }
 
+.background h2 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #363636;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.background-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.background-boxes img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #E6E6E6;
+}
+
 .background p {
     font-family: 'Saans', sans-serif;
     font-weight: 400;
@@ -594,6 +625,13 @@ nav a:focus,
     color: #363636;
     line-height: 1.3;
     margin-top:1rem;
+}
+
+.background .highlight {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #1E8541;
 }
 
 .background img {
@@ -619,6 +657,152 @@ nav a:focus,
     border-radius: 999px;
 }
 
+.mission-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+.mission-boxes, .background p {
+    margin-bottom: 1rem;
+}
+
+.mission-boxes span {
+    font-family: 'Saans', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+
+    background-color: #F8F8F8;
+    color: #363636;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    border: 2px solid #E6E6E6;
+}
+
+.info-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.info-box {
+    background-color: #DDF3FF;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.info-box h2 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #229FE2;
+    line-height: 1.3;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+#painpoint > .info-box {
+  background-color: #FFE7E7;
+}
+
+#aquarium > .info-box {
+  background-color: #FFE2D0;
+}
+
+#painpoint > .info-box h2 {
+  color: #FF2525;
+}
+
+#aquarium > .info-box h2 {
+  color: #F07A29;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.3rem 0rem 0rem 0rem;
+
+    background-color: #F8F8F8;
+    border: 2px solid #E6E6E6;
+    border-radius: 1.2rem;
+    padding: 3.5rem 5rem;
+}
+
+.user-box h2 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #363636;
+    line-height: 1.3;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.user-box h4 {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+.user-box li {
+    margin-top: 0.5rem;
+}
+
+.user-box ul {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin-top: 0.5rem;
+    margin-left: -1.2rem;
+}
+
+.user-box img {
+    width: 40%;
+    height: auto;  
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.workshop-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.workshop-images img {
+    width: 100%;
+    height: auto;
+}
+
+.design-focus {
+    margin-top: 1.2rem;
+    margin-bottom: 0rem;
+    background-color: #F8F8F8;
+    padding: 2rem 4rem;
+    border: 2px solid #E6E6E6;
+    border-radius: 1.2rem;
+
+}
+
+.design-focus span {
+    color:#1E8541;
+}
+
+.case-layout .site-footer {
+    padding: 0rem;
+    border-top: 2px solid #F1F1F1;;
+
+}
 
 
 
