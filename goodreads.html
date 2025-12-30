@@ -21,7 +21,14 @@
             <nav class="case-nav">
                 <a href="#overview">Overview</a>
                 <a href="#background">Background</a>
+                <a href="#research">Research</a>
                 <a href="#problem">The Problem</a>
+                <a href="#user">The User</a>
+                <a href="#focus">Design Focus</a>
+                <a href="#solution">Initial Design</a>
+                <a href="#test">User Testing</a>
+                <a href="#flow">Final User Flow</a>
+                <a href="#learning">Conclusion</a>
             </nav>
         </aside>
 
@@ -37,7 +44,7 @@
                 </h1>
 
                 <p class="hero-desc">
-                    In this 4-week academic project, I investigated an existing mobile app, Goodreads, to identify problems through research and redesign features to improve the user experience. 
+                    In this 4-week academic project, I was tasked to investigate an existing mobile app, Goodreads, to identify problems through research and redesign a specific features to troubleshoot and improve the overall experience.
                 </p>
 
                 <p class="hero-disclaimer">
@@ -55,7 +62,7 @@
                     </div>
                     <div>
                     <h4>Duration</h4>
-                    <p>4-week (Spring 2024)</p>
+                    <p>3-week (Spring 2024)</p>
                     </div>
                 </div>
             </section>
@@ -82,16 +89,271 @@
             <!-- Background -->
             <section class="background" id="background"> 
                 <div class="tags"><span>Background</span></div>
-                <h1>So...Who is Vancouver Aquarium?</h1>
+                <h1>So...Who is Goodreads?</h1>
                 <img src="images/VA/va-bg.png" alt="">
-                <p>Vancouver Aquarium is a family-friendly public aquarium. It is home to over 65,000 animals and operates 120 exhibitions. Beyond being an attraction, it also leads marine rescue, research and education programs, climate activism, and animals rehabilitation initiatives.</p>
-                <h4>Missions & Goals</h4>
-                <div class="mission-boxes">
-                    <span><p>Create engaging, educational experiences for every visitor. </p></span>
-                    <span><p>Connect people with the natural world to inspire action.</p></span>
-                    <span><p>Provide the highest of standards of animal care.</p></span>
+                <p>Goodreads serves as a social cataloging platform, providing book enthusiast with a space to discover new books, express their views through reviews and ratings, and build connections with fellow readers who share similar literary interests.</p>
+
+                <!-- Key Features -->
+                <h2>Some of the Key Application Features</h2>
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <h2>Social interactions between users</h2>
+                        <p>Users can join online book clubs to engage with others. Also, readers can share their opinions by leaving reviews and ratings for books.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Discover new books based on user activities</h2>
+                        <p>Based on the user’s in-app activity, the mobile app’s algorithm can create lists of recommended books that may interest the readers. </p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Virtual bookshelves to organize progress</h2>
+                        <p>Users can create and customize virtual bookshelves to organize and categorize their reading lists, while also tracking their reading progress.</p>
+                    </div>
 
                 </div>
+
+                <h2>Missions & Goals</h2>
+                <div class="mission-boxes">
+                    <span><p>Connecting bookworms around the world.</p></span>
+                    <span><p>Assisting readers in discovering more books</p></span>
+                    <span><p>Organize their books and keep track of their reading progress.</p></span>
+
+                </div>
+
+            </section>
+
+            <!-- Research -->
+            <section class="background" id="research"> 
+                <div class="tags"><span>Research</span></div>
+                <h1>Speaking with Goodreads’ users with the mobile app to understand the  usability issues, pain points, and potential design opportunities.</h1>
+                <img src="images/VA/va-bg.png" alt="">
+                <p>I began the research by conducting a <span class="highlight">heuristic walkthrough</span> of the app, documenting usability issues and observations. These findings then informed the planning of user interviews, which were used to <span class="highlight">validate and expand on the identified insights</span>.</p>
+
+                <p>Within two days, I recruited and interviewed <span class="highlight">4 participants</span> across two rounds: an initial exploratory interview followed by a more targeted session focused on specific features (Community, Bookshelves, & Discovery). Participants were guided through <span class="highlight">structured questions</span> and <span class="highlight">task-based activities</span> while their interactions with the mobile app were observed.</p>
+
+
+                <!-- Pain Points -->
+                <h2>The two-round interviews revealed these following main pain points:</h2>
+                <div id="painpoint" class="info-boxes">
+                    <div class="info-box">
+                        <h2>Pain Point #1</h2>
+                        <p>the UI and navigation flows are outdated and confusing, discouraging them from other features.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Pain Point #2</h2>
+                        <p>some features are hidden or very rough so discourage them from retention</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Pain Point #3</h2>
+                        <p>Some features do not translate from the desktop version to the mobile version. </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Pain Points -->
+                <h2>When asked about the Community, Bookshelves & Discovery Features...</h2>
+                <div id="painpoint" class="info-boxes">
+                    <div class="info-box">
+                        <h2>Pain Point #1</h2>
+                        <p>Most interviewees find the community feature lacklustre compared to the other two, as it appears as <span class="highlight">just a blank page with a search bar</span>.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Pain Point #2</h2>
+                        <p>The current Community Page fails to motivate or engage users because it <span class="highlight">does not offer meaningful value</span> with limited interaction and confusing flow.</p>
+                    </div>
+
+                </div>
+
+                <P>Also note, one interviewee <span class="highlight">did not even know the community feature existed</span> until the interview took place as they quote, "it's way too hidden in the app..."</P>
+
+            </section>
+
+
+            <!-- Problem -->
+            <section class="background" id="problem"> 
+                <div class="tags"><span>The Problem</span></div>
+                <h1>The Community feature lacks a clear perceived value for readers, leading to minimal engagement. Its limited interactions undermine the platform’s goal of building a connected reading community.</h1>
+
+                <h2>But is it actually a big deal though? Well...Based on the interviews and online forums:</h2>
+
+                <!-- Reasonings -->
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <h2>Community Drives Discovery</h2>
+                        <p>Readers value communities because they help surface new books and offer diverse interpretations that enrich the reading experience.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Shared Goals Create Motivation</h2>
+                        <p>Whether in small or large groups, reading alongside others fosters motivation, accountability, and a sense of shared progress.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Connection Matters Beyond Habit</h2>
+                        <p>Even though avid readers would read regardless, communities add emotional value by creating opportunities to bond over shared interests.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Belonging Drives Engagement</h2>
+                        <p>Users are drawn to features that make them feel part of something larger, reinforcing long-term engagement and platform loyalty.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Intended Audience -->
+            <section class="background" id="user" > 
+                <div class="tags"><span>Intended Audience</span></div>
+                <p>Based on research insights, two user personas were developed to represent distinct reading habits, motivations, and levels of community engagement. These personas guided the design decisions and helped ensure the solution addressed real user needs and behaviors.</p>
+
+                <div class="user-box">
+                    <div class="user-info">
+                        <h2>The Social Reader</h2>
+                        <p>A habitual reader who enjoys discovering new books and connecting with others about shared reading experiences.</p>
+                        <h4>Goals + Motivations</h4>
+                        <ul>
+                            <li>Connect with like-minded readers and share interpretations of books.</li>
+                            <li>Discover new books and genres through social interactions.</li>
+                            <li>Feel a sense of belonging and engagement in the reading community.</li>
+                        </ul>
+
+                    </div>
+
+                    <img src="images/VA/fun-seek.png" alt="Persona image of the fun-seeking tourist">
+                </div>
+
+                <div class="user-box">
+                    <div class="user-info">
+                        <h2>The Casual Bookworm</h2>
+                        <p>An occasional reader who wants to be part of a small reading group and accountability to maintain a consistent reading habit.</p>
+                        <h4>Goals + Motivations</h4>
+                        <ul>
+                            <li>Participate in reading activities and be included in a community without feeling forced.</li>
+                            <li>Reinforce reading habits through social accountability.</li>
+                            <li>Read other people’s reviews and discussions</li>
+                        </ul>
+
+                    </div>
+
+                    <img src="images/VA/fun-seek.png" alt="Persona image of the fun-seeking tourist">
+                </div>
+
+                <h2>Synthesized research into a User Journey Map</h2>
+                <p>Using insights from the research intiatives, I created a brief user journey map to highlight visitors’ pain points, emotions, and behavioral patterns, guiding me in identifying opportunities to resolve the challenges and improve the experience.</p>
+                <img src="images/VA/user-journey2.png" alt="Journey Map of thoughts and feelings of the overall visit">
+                
+            </section>
+
+
+            <!-- Design Focus -->
+            <section class="background" id="focus" > 
+                <div class="tags"><span>Design Focus</span></div>
+                <div class="design-focus"><h1>How might we redesign the Community feature to feel more meaningful and <span>increase perceived value </span>and engagement, supporting Goodreads’ mission of <span>fostering a connected reading community</span>?</div>
+
+                <h2>Amplify User’s Motivation Through Clear Value</h2>
+                <p>The goal isn’t to force reading or create a community for its own sake. It’s to <span class="highlight">improve existing users’ motivation</span> by clearly demonstrating the <span class="highlight">value of participating</span> and <span class="highlight">increasing engagement depth</span>.</p>
+
+            </section>
+
+            <!-- solution -->
+            <section class="background" id="solution" > 
+                <div class="tags"><span>Initial Design - Solution</span></div>
+
+                <h2>The Goal-Orientated Activities</h2>
+                <p>Including the bingo, look-and-find, and the crossword, <span class="highlight">prompt visitors to explore different parts of the aquarium</span>. When visitors complete a row in the bingo activity, they can <span class="highlight">receive an incentive</span>, such as special edition stickers, from a volunteer or staff member, adding an extra layer of motivation and engagement.</p>
+                <img src="images/VA/goal-activity.png" alt="Goal-Orientated Activities">
+
+                <h2>The Cut-out Activities</h2>
+                <p>Building on the theme of active exploration, the cut-out activities shaped like a shark and a submarine allow visitors to <span class="highlight">view the aquarium through playful openings</span>. This creates a <span class="highlight">more immersive experience</span> by encouraging them to see the exhibits from a unique perspective.</p>
+                <img src="images/VA/cutout-activity.png" alt="Cut-Out Activities">
+
+                <h2>The Creative Activities</h2>
+                <p>The open-ended prompts, such as finish the drawing, decorate the fish tank, and draw the habitat. These activities provide visitors the opportunity to <span class="highlight">document their findings through expressive creativity</span> , in whatever way feels most natural to them.</p>
+                <img src="images/VA/creative-activity.png" alt="Cut-Out Activities">
+
+                <h2>The Creative Activities</h2>
+                <p>The open-ended prompts, such as finish the drawing, decorate the fish tank, and draw the habitat. These activities provide visitors the opportunity to <span class="highlight">document their findings through expressive creativity</span> , in whatever way feels most natural to them.</p>
+                <img src="images/VA/creative-activity.png" alt="Cut-Out Activities">
+        
+            </section>
+
+            <!-- usability -->
+            <section class="background" id="test" > 
+                <div class="tags"><span>Usability Testing</span></div>
+                <h2>The prototype was evaluated with three participants, and the insights gathered were used to refine key features. </h2>
+                <p>The test focused on assessing the usability of the proposed community features and how effectively users could complete primary tasks, including <span class="highlight">finding a new group to join and creating a new group</span>. The Participants were asked to complete realistic scenarios using the Think Aloud method to surface any usability issues.</p>
+
+                <h2>The Goal-Orientated Activities</h2>
+                <div class="use-test-boxes">
+                    <div class="use-test-box">
+                        <img src="images/VA/booklet-mockup.png" alt="Mockup of the booklet">
+                        <P><span class="highlight">Before:</span> Items were placed side by side, but the design was too simple, and some testers found it unintuitive, making it difficult to immediately see the differences.</P>
+
+                    </div>
+
+                    <div class="use-test-box">
+                        <div><img src="images/VA/booklet-mockup.png" alt="Mockup of the booklet"></div>
+                        <P><span class="highlight">After:</span> Detailed descriptions and item names were added to provide users with more information.</P>
+                    </div>
+                </div>
+
+                <h2>The Goal-Orientated Activities</h2>
+                <div class="use-test-boxes">
+                    <div class="use-test-box">
+                        <img src="images/VA/booklet-mockup.png" alt="Mockup of the booklet">
+                        <P><span class="highlight">Before:</span> Items were placed side by side, but the design was too simple, and some testers found it unintuitive, making it difficult to immediately see the differences.</P>
+
+                    </div>
+
+                    <div class="use-test-box">
+                        <div><img src="images/VA/booklet-mockup.png" alt="Mockup of the booklet"></div>
+                        <P><span class="highlight">After:</span> Detailed descriptions and item names were added to provide users with more information.</P>
+                    </div>
+                </div>
+
+                <h2>The Goal-Orientated Activities</h2>
+                <div class="use-test-boxes">
+                    <div class="use-test-box">
+                        <img src="images/VA/booklet-mockup.png" alt="Mockup of the booklet">
+                        <P><span class="highlight">Before:</span> Items were placed side by side, but the design was too simple, and some testers found it unintuitive, making it difficult to immediately see the differences.</P>
+
+                    </div>
+
+                    <div class="use-test-box">
+                        <div><img src="images/VA/booklet-mockup.png" alt="Mockup of the booklet"></div>
+                        <P><span class="highlight">After:</span> Detailed descriptions and item names were added to provide users with more information.</P>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Final User Flow -->
+            <section class="background" id="flow"> 
+                <div class="tags"><span>Final User Flow</span></div>
+                <h1>Video Walkthrough of the Final User Flow</h1>
+                <img src="images/VA/va-bg.png" alt="">
+                
+            </section>
+
+
+            <!-- Learning -->
+            <section class="background" id="learning" > 
+                <div class="tags"><span>Conclusion</span></div>
+
+                <h1>Recognize what’s working and what’s not.</h1>
+                <p>Overall, this semester-long project has provided me with <b>valuable experience in conducting research and creating solutions for a real-world organization</b>. My course instructor applauded that the activity booklet we've developed holds significant potential for implementation in other aquarium and cultural institutions due to its flexibility and broad demographic use.</p>
+
+                <p>Through this project, I developed the ability to <b>critically assess when an idea is effective and when it is not</b>. I learned how to quickly identify stagnating concepts, let them go, and strategically re-pivot the project toward more impactful and viable solutions. While it can be painful to let go of ideas that feel exciting or “cool,” it is important to prioritize user needs and business objectives.</p>
+
+                <h1>Reflection</h1>
+                <p>Due to the course structure and the organization’s policy, there was limited time to conduct user testing on the final prototype, and interaction with youth under the age of 16 was not permitted. If I had more time, I would conduct <b>conduct usability testings on the final prototype and iterate based on the findings</b>. This is important as conducting usability tests would be the logical next phase to ensure that users are engaging with it as intended.</p>
 
             </section>
 
