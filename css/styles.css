@@ -1518,6 +1518,10 @@ nav a:focus,
         display: none;
     }
 
+    .resume::after {
+    content: none;
+}
+
     .nav-toggle {
         display: flex;
         align-items: center;
