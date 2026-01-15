@@ -28,15 +28,26 @@
         </h1>
 
         <!-- Nav bar -->
-        <nav>
-            <a href="index.html#myWork">Works</a>
-            <a href="sandbox.html">Sandbox</a>
-            <a href="about.html">About</a>
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-expanded="false">
+                Menu
+                <span class="chevron">▾</span>
+            </button>
+
+            <div class="nav-links">
+                <a href="index.html#myWork">Works</a>
+                <a href="sandbox.html">Sandbox</a>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing" class="resume mobile-only">View Resumé</a>
+    </div>
+            </div>
         </nav>
 
-        <div>
+        <div class="resume-wrapper">
             <a class="resume" href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing">View Resumé</a>
         </div>
+
+        <!-- Nav bar -->
 
     </header>
 
@@ -48,8 +59,8 @@
                 <img src="images/about/aboutme.png">
             </div>
 
-            <h2>Welcome to my Internet Corner 🍵, I’m Caleb.</h2>
-            <p>I am a human-first (imperfect and always learning) UX/UI & Product designer who studies the <span class="highlight">interactions between humans and systems</span> to craft <span class="highlight">meaningful experiences</span> that align with user and business goals.</p>
+            <h2>Welcome to my Internet Corner 🍵</h2>
+            <p>The name is Caleb. I am a human-first (imperfect and always learning) UX/UI & Product designer who studies the <span class="highlight">interactions between humans and systems</span> to craft <span class="highlight">meaningful experiences</span> that align with user and business goals.</p>
 
             <p>My design process is centred around people and <span class="highlight">how their needs fit within larger systems</span>. I am a designer and problem solver who strives to break down complex challenges, drive action through purpose-driven design, and -yes- make things pretty.</p>
 
@@ -136,6 +147,19 @@
         </div>
 
     </section>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        navToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('open');
+
+            // Optional: toggle aria-expanded for accessibility
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
 
 
 
