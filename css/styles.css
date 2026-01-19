@@ -216,14 +216,14 @@ nav a:focus,
 }
 
 .introImg {
-    width: 80%;
+    width: 70%;
 }
 
 /* Left column */
 .intro-left h2 {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
     color: #363636;
     line-height: 1.3;
@@ -235,7 +235,7 @@ nav a:focus,
 .highlight {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     color: #1E8541;
 }
 
@@ -243,10 +243,10 @@ nav a:focus,
 .note {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.4;
     color: #ABABAB;
-    width: 85%;
+    width: 80%;
     margin-top: 2rem;
 }
 
@@ -323,7 +323,7 @@ nav a:focus,
 .card-body .tags span {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: #E6E6E6;
     color: #363636;
     padding: 0.5rem 1rem;
@@ -334,7 +334,7 @@ nav a:focus,
 /* headings */
 .card-body h3 {
     font-family: 'Saans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0.7rem 0;
     font-size: 1.5rem;
     color: #363636;
@@ -345,7 +345,7 @@ nav a:focus,
     font-weight: 400;
     margin: 0;
     color: #363636;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.4;
 }
 
@@ -487,9 +487,10 @@ nav a:focus,
     top: 4rem;
     height: fit-content;
 
+
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .case-sidebar nav {
@@ -531,7 +532,7 @@ nav a:focus,
 .back-link {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #363636;
     text-decoration: none;
 }
@@ -540,12 +541,12 @@ nav a:focus,
 .case-nav {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1.2rem;
 }
 
 .case-nav a {
     font-family: 'Saans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #363636;
     text-decoration: none;
@@ -558,7 +559,7 @@ nav a:focus,
 }
 
 .case-content {
-    max-width: 70vw;
+    max-width: 72vw;
     margin-inline: auto;
 }
 
@@ -643,17 +644,17 @@ nav a:focus,
 }
 
 .background {
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 .background h1 {
     font-family: 'Saans', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1.7rem;
     color: #363636;
     line-height: 1.3;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .background h3 {
@@ -666,12 +667,12 @@ nav a:focus,
 
 .background h2 {
     font-family: 'Saans', sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
+    font-weight: 500;
+    font-size: 1.4rem;
     color: #363636;
     line-height: 1.3;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+
 }
 
 .background-boxes {
@@ -689,10 +690,10 @@ nav a:focus,
 .background p {
     font-family: 'Saans', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #363636;
     line-height: 1.3;
-    margin-top: 1rem;
+     
 }
 
 .background a {
@@ -707,7 +708,7 @@ nav a:focus,
 .background .highlight {
     font-family: 'Saans', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #1E8541;
 }
 
@@ -728,10 +729,10 @@ nav a:focus,
 .background .tags span {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: #1E8541;
     color: #FFFFFF;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 999px;
 }
 
@@ -742,9 +743,9 @@ nav a:focus,
     gap: 0.7rem;
 }
 
-.mission-boxes,
 .background p {
-    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .mission-boxes span {
@@ -774,12 +775,22 @@ nav a:focus,
 
 .info-box h2 {
     font-family: 'Saans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
     color: #229FE2;
     line-height: 1.3;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin: 0rem;
+
 }
 
 #painpoint>.info-box {
@@ -923,7 +934,7 @@ nav a:focus,
 
 /* About Page */
 .about-page {
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
 }
 
 .about {
@@ -962,6 +973,16 @@ nav a:focus,
 
 }
 
+.about-page p {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #363636;
+    line-height: 1.3;
+    margin-top: 2rem;
+
+}
+
 .about .highlight {
     font-family: 'Saans', sans-serif;
     font-weight: 500;
@@ -991,7 +1012,16 @@ nav a:focus,
 
 .about h3 {
     font-family: 'Saans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #363636;
+    margin: 0 0 0.5rem 0;
+
+}
+
+.about h4 {
+    font-family: 'Saans', sans-serif;
+    font-weight: 400;
     font-size: 1.4rem;
     color: #363636;
     margin: 0 0 0.5rem 0;
@@ -1007,7 +1037,7 @@ nav a:focus,
 .education-div p {
     font-family: 'Saans', sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #ABABAB;
     margin: 0;
 }
